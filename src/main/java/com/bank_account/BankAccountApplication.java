@@ -1,13 +1,13 @@
-package com.sabek.bank_account_kata;
+package com.bank_account;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BankAccountKataApplication {
+public class BankAccountApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BankAccountKataApplication.class, args);
+		SpringApplication.run(BankAccountApplication.class, args);
 	}
 
 }

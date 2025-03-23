@@ -1,7 +1,7 @@
-package com.sabek.bank_account_kata.domain.model.service;
+package com.bank_account.domain.model.service;
 
-import com.sabek.bank_account_kata.domain.model.Transaction;
-import com.sabek.bank_account_kata.domain.model.repository.TransactionRepository;
+import com.bank_account.domain.model.Transaction;
+import com.bank_account.domain.model.repository.TransactionRepository;
 import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -9,6 +9,7 @@ import java.util.List;
 
 @Service
 public class BankAccountService {
+
     private final TransactionRepository transactionRepository;
     private BigDecimal balance = BigDecimal.ZERO;
 

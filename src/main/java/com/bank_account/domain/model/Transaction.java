@@ -1,10 +1,15 @@
-package com.sabek.bank_account_kata.domain.model;
+package com.bank_account.domain.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "transactions")
 public class Transaction {
@@ -15,16 +20,10 @@ public class Transaction {
     private BigDecimal amount;
     private BigDecimal balance;
 
-    protected Transaction() {}
-
     public Transaction(LocalDateTime date, BigDecimal amount, BigDecimal balance) {
         this.date = date;
         this.amount = amount;
         this.balance = balance;
     }
 
-    public Long getId() { return id; }
-    public LocalDateTime getDate() { return date; }
-    public BigDecimal getAmount() { return amount; }
-    public BigDecimal getBalance() { return balance; }
 }

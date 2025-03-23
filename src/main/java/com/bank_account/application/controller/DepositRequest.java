@@ -1,4 +1,4 @@
-package com.sabek.bank_account_kata.application.controller;
+package com.bank_account.application.controller;
 
 import java.math.BigDecimal;
 

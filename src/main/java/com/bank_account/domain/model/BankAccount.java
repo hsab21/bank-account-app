@@ -1,4 +1,4 @@
-package com.sabek.bank_account_kata.domain.model;
+package com.bank_account.domain.model;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -12,7 +12,10 @@ public class BankAccount {
         this.balance = BigDecimal.ZERO;
         this.transactions = new ArrayList<>();
     }
-
+    public BankAccount(BigDecimal balance){
+        this.balance = balance;
+        this.transactions = new ArrayList<>();
+    }
     public void deposit(BigDecimal amount) {
 
         if (amount.compareTo(BigDecimal.ZERO) <= 0) {

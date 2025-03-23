@@ -1,7 +1,7 @@
-package com.sabek.bank_account_kata.application.controller;
+package com.bank_account.application.controller;
 
 
-import com.sabek.bank_account_kata.domain.model.service.BankAccountService;
+import com.bank_account.domain.model.service.BankAccountService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
